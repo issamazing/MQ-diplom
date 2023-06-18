@@ -37,7 +37,6 @@ a {
   position: relative;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
   background-repeat: no-repeat;
-  padding-bottom: 125px;
   background-size: cover;
 }
 
@@ -82,10 +81,8 @@ a {
   text-align: center;
 }
 
-.menu-item {
-  margin-left: 20px;
-  padding-top: 45px;
-  
+.menu-item:nth-child(n+2) {
+  margin-left: 35px;
 }
 
 .menu-link {
@@ -115,21 +112,25 @@ a {
 .pop-up-content {
   box-sizing: border-box;
   width: 390px;
-  height: 590px;
   background-color: #fff;
   position: fixed;
   padding: 53px 30px;
-  margin-top: 30px;
 }
 
-.popup_close {
-  position: absolute;
-  color: #fff;
-  width: 18px;
-  height: 18px;
-  right: -1px;
-  top: -40px;
+.popup__close {
+  width: 25px;
+  height: 25px;
   font-size: 40px;
+
+  position: absolute;
+  top: -45px;
+  right: 0;
+  color: #fff;
+  
+}
+
+button {
+  all: unset;
   cursor: pointer;
 }
 
@@ -268,9 +269,12 @@ a {
 .trend-article {
   display: flex;
   width: 25%;
-  margin: 0 1.5px;
-  height: 320px;
+  min-height: 310px;
   background-color: #eff6f1;
+}
+
+.trend-article:nth-child(n+2){
+  margin: 0 2px;
 }
 
 .trend-container {
@@ -374,10 +378,6 @@ a {
   position: relative;
   width: 381px;
   margin-right: 30px;
-}
-
-.article-content {
-  width: 367px;
 }
 
 .article-list {
@@ -502,6 +502,10 @@ font-size: 14px;
 line-height: 14px;
 color: #b59f5b;
 font-weight: 700;
+}
+
+a {
+  color: inherit;
 }
 
 .new-post-png {
@@ -793,6 +797,10 @@ font-weight: 700;
   padding-bottom: 32px;
 }
 
+.contact__logo-link {
+  margin 0;
+}
+
 
 .contacts__logo {
   display: flex;
@@ -800,6 +808,7 @@ font-weight: 700;
   justify-content: center;
   list-style-type: none;
 }
+
 
 
 .dribbble {
